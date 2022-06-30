@@ -1,8 +1,7 @@
 let index = {
     init: function () {
-        // jQuery 사용
         $("#btn-save").on("click", () => {
-            this.save(); // save함수 이벤트로 호출
+            this.save();
         });
 
     },
@@ -15,9 +14,8 @@ let index = {
         }
 
         $.ajax({
-            // 회원가입 수행 요청
             type: "POST",
-            url: "/api/joinProc",
+            url: "/auth/joinProc",
             data: JSON.stringify(data),
             contentType: "application/json; charset=utf-8",
             dataType: "json"
