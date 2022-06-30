@@ -1,4 +1,4 @@
-package com.dev.blog.controller.api;
+package com.dev.blog.config.auth.api;
 
 import com.dev.blog.domain.Role;
 import com.dev.blog.domain.User;
